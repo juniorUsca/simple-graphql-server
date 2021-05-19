@@ -2,10 +2,10 @@
   "name": "simple-apollo-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.joseph.carita.mamani.js",
+  "main": "index.joseph.carita.mamani.jc.js",
   "scripts": {
-    "start": "node index.joseph.carita.mamani.js",
-    "dev": "nodemon index.joseph.carita.mamani.js",
+    "start": "node index.joseph.carita.mamani.jc.js",
+    "dev": "nodemon index.joseph.carita.mamani.jc.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

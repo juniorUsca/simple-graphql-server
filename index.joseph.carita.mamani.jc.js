@@ -41,13 +41,13 @@ const typeDefs = gql`
 `
 const resolvers = {
   Query: {
-    allCivilizations: async (root, args) => {
+    allCivilizations: async ( root, args ) => {
         if (!args.name && !args.expansion) {
           const {data: { civilizations } }=  await axios.get(apiCivilizations)
           return civilizations
         }
       },
-      allTechnologies: async (root,args) => {
+      allTechnologies: async ( root, args ) => {
         if (!args.name && !args.expansion) {
           const { data:{ technologies } } =  await axios.get(apiTechnologies)
           return technologies
