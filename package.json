@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mariam.apaza.santillana": "node index.jindex.mariam.apaza.santillana.js"
+    "mariam.apaza.santillana": "node index.mariam.apaza.santillana.js"
 
   },
   "keywords": [],
