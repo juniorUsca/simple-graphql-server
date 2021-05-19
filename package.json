@@ -6,8 +6,9 @@
   "scripts": {
     "start.sixto.aisa": "node index.sixto.aisa.js",
     "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
-    "start": "node index.js",
     "start.javier.flores": "node index.javier.flores.cardenas.js",
+    "start.maria.aguilar": "node index.maria.aguilar.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
