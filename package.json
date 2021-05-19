@@ -2,8 +2,12 @@
   "name": "simple-apollo-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.joseph.carita.mamani.jc.js",
   "scripts": {
+    "start.sixto.aisa": "node index.sixto.aisa.js",
+    "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
+    "start.javier.flores": "node index.javier.flores.cardenas.js",
+    "start.maria.aguilar": "node index.maria.aguilar.js",
     "start": "node index.js",
     "start.David.Alejo": "node index.David.Alejo.Apaza.js",
     "dev": "nodemon index.js",
