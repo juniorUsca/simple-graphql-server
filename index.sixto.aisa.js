@@ -1,6 +1,6 @@
 const { ApolloServer, gql } = require('apollo-server')
 const { v4: uuid } = require('uuid')
-const axios = require('axios');
+const axios = require('axios').default;
 
 let capitulos=[]
 
@@ -45,7 +45,7 @@ const resolvers = {
   Query: {
     allCapitulo: (root, args) => {
 
-      let retorno=axios.get(url)
+      let retorno=axios(url)
           .then((result) => {
 
             return result.data.results
@@ -74,17 +74,17 @@ const resolvers = {
 
     },
     capituloCount: () => {
-      let retorno=axios.get(url)
-          .then((result) => {
+        let retorno=axios(url)
+            .then((result) => {
 
-            return result.data.results
+                return result.data.info.count
 
-          })
-          .catch((error) => {
-            return []
-          });
+            })
+            .catch((error) => {
+                return 0
+            });
 
-      return retorno.length
+        return retorno
     },
   },
   Mutation: {
