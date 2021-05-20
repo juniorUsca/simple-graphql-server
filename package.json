@@ -14,6 +14,7 @@
     "start.andre": "node index.andre.delgado.js",
     "start.jeydi.huaranca": "node index.Jeydi.Huarancca.Pacheco.js",
     "start.diego.pamo": "node index.diego.pamo.js",
+    "start.edix.carlos": "node index.Edix.Carlos.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +23,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.24.1",
+    "apollo-server": "2.24.1",
     "axios": "0.21.1",
     "node-fetch": "2.6.1",
     "uuid": "8.3.2"
