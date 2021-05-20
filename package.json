@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "start.diego.pamo": "node index.diego.pamo.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "2.24.0",
+    "apollo-server": "^2.24.1",
     "axios": "0.21.1",
+    "graphql": "^15.5.0",
+    "node-fetch": "^2.6.1",
     "uuid": "8.3.2"
   },
   "devDependencies": {
