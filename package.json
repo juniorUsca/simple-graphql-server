@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "startandre": "node index.andre.delgado.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "2.24.0",
-    "axios": "0.21.1",
+    "apollo-server": "^2.24.0",
+    "axios": "^0.21.1",
+    "graphql": "^15.5.0",
+    "node-fetch": "^2.6.1",
     "uuid": "8.3.2"
   },
   "devDependencies": {
