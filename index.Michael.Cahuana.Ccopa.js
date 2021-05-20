@@ -5,16 +5,18 @@ const axios = require('axios').default;
 let Vehicle=[]
 
 const typeDefs = gql` 
-  enum BRAND {
-    AMG
-    MAYBACH
+  enum NAMES {
+    ACURA
+    AGRALE
+    ALFA ROMEO
+    AM GEN
+    ASIA MOTORS
   } 
   type Vehicle {
     id: String!
     brand: String!
     name: String!
     status: String!
-    type: String!  
     origin: [String!]!    
     image: String! 
   }
@@ -24,7 +26,6 @@ const typeDefs = gql`
       id: Int!    
       name: String!
       status: String!
-      type: String!
     ): Vehicle    
   }
   type Query {
@@ -35,7 +36,7 @@ const typeDefs = gql`
   }
 `
 
-let url="https://developer.mercedes-benz.com/products"
+let url="https://parallelum.com.br/fipe/api/v1/carros/marcas"
 
 const resolvers = {
   Query: {
@@ -101,3 +102,4 @@ const server = new ApolloServer({
 server.listen().then(({ url }) => {
   console.log(`Server ready at ${url}`)
 })
+
