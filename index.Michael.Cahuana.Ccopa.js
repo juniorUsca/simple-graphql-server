@@ -5,91 +5,76 @@ const axios = require('axios').default;
 let Vehicle=[]
 
 const typeDefs = gql` 
-  enum NAMES {
-    ACURA
-    AGRALE
-    ALFA ROMEO
-    AM GEN
-    ASIA MOTORS
-  } 
-  type Vehicle {
-    id: String!
-    brand: String!
-    name: String!
-    status: String!
-    origin: [String!]!    
-    image: String! 
+  type Marcas {
+    nome: String!
+    codigo: String!
+  }
+  type Valor {
+    Valor: String!
+    Marca: String!
+    Modelo: String!
+    AnoModelo: Int!
+    Combustivel: String!
+    CodigoFipe: String!
+    MesReferencia: String!
+    TipoVeiculo: Int!
+    SiglaCombustivel: String!
   }
   type Mutation {
     "Agrega un nuevo Vehicle"
-    addVehicle(
-      id: Int!    
-      name: String!
-      status: String!
-    ): Vehicle    
+    addValor(
+      Valor: String!
+      Marca: String!
+      Modelo: String!
+      AnoModelo: Int!
+      Combustivel: String!
+      CodigoFipe: String!
+      MesReferencia: String!
+      TipoVeiculo: Int!
+      SiglaCombustivel: String!
+    ): Valor    
   }
   type Query {
-   "Agrega un nuevo Vehicle"
-    allVehicle(brand: String, type: String): [Vehicle!]!
-    findVehicle(id: String): Vehicle!
-    vehicleCount: Int!
+   "Agrega un nuevo Valor o Marcas"
+    allMarcas(nome: String, codigo: String): [Marcas!]!
+    allValor(Valor: String, Modelo: String): [Valor!]!
+    marcasCount: Int!
+    valorCount: Int!
   }
 `
 
-let url="https://parallelum.com.br/fipe/api/v1/carros/marcas"
+let Url1="https://parallelum.com.br/fipe/api/v1/carros/marcas"
+let Url2="https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos/5940/anos/2014-3"
 
 const resolvers = {
   Query: {
-    allVehicle: (root, args) => {
-
-      let retorno=axios(url)
-          .then((result) => {
-
-            return result.data.results
-
-          })
-          .catch((error) => {
-           return []
-          });
-
-      return retorno
-
+    allMarcas: (root, args) => {
+        if (!args.nome && !args.codigo) {
+          const {data: { marcas } }=  await axios.get(apiUrl1)
+          return marcas
+        }
+      },
+    allValor: async ( root, args ) => {
+        if (!args.Valor && !args.Modelo) {
+          const { data:{ valor } } =  await axios.get(apiUrl2)
+          return valor
+        }
+      },
+    marcasCount: async () => {
+          const { data:{ marcas } } =  await axios.get(apiUrl1)
+          return marcas.length
     },
-    findVehicle: (root, args) => {
-
-      let retorno=axios.get(url+"/"+args.id)
-          .then((result) => {
-
-            return result.data
-
-          })
-          .catch((error) => {
-            return []
-          });
-
-      return retorno
-
-    },
-    vehicleCount: () => {
-        let retorno=axios(url)
-            .then((result) => {
-
-                return result.data.info.count
-
-            })
-            .catch((error) => {
-                return 0
-            });
-
-        return retorno
-    },
+    valorCount: async () => {
+          const { data:{ valor } } =  await axios.get(apiUrl2)
+          return valor.length
+    }
   },
   Mutation: {
-    addVehicle: (root, args) => {
+    addValor: (root, args) => {
 
-      const vehicle = { ...args, id: uuid() }
-      vehicles = vehicles.concat(vehicle)
-      return vehicle
+      const newValor = { ...args, id: uuid() }
+      Vehicle = Vehicle.concat(newValor)
+      return newValor
     },
   },
 }
@@ -102,4 +87,3 @@ const server = new ApolloServer({
 server.listen().then(({ url }) => {
   console.log(`Server ready at ${url}`)
 })
-
