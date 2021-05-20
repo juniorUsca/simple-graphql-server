@@ -12,6 +12,7 @@
     "start.David.Alejo": "node index.David.Alejo.Apaza.js",
     "start.mariam.apaza.santillana": "node index.mariam.apaza.santillana.js",
     "start.andre": "node index.andre.delgado.js",
+    "start.jeydi.huaranca": "node index.Jeydi.Huarancca.Pacheco.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
