@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node indexjs",
     "start.victor.huaycho" : "node index.victor.huaycho.js",
+    "start.sixto.aisa": "node index.sixto.aisa.js",
+    "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
+    "start.javier.flores": "node index.javier.flores.cardenas.js",
+    "start.maria.aguilar": "node index.maria.aguilar.js",
+    "start.David.Alejo": "node index.David.Alejo.Apaza.js",
+    "mariam.apaza.santillana": "node index.mariam.apaza.santillana.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,11 +21,11 @@
   "dependencies": {
     "apollo-server": "2.24.0",
     "axios": "0.21.1",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "2.6.1",
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "apollo": "^2.33.2",
+    "apollo": "2.33.2",
     "nodemon": "2.0.7"
   }
 }
