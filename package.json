@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start.victor.huaycho" : "node index.victor.huaycho.js",
     "start.sixto.aisa": "node index.sixto.aisa.js",
     "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
     "start.javier.flores": "node index.javier.flores.cardenas.js",
@@ -24,6 +25,7 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "apollo": "2.33.2",
     "nodemon": "2.0.7"
   }
 }
