@@ -1,0 +1,78 @@
+{
+  getAllFilms{
+    id
+    title
+    original_title
+    original_title_romanised
+    description
+    director
+    producer
+    release_date
+    rt_score
+    people
+    species
+  }
+}
+{
+  getFilm(id:"ea660b10-85c4-4ae3-8a5f-41cea3648e3e"){
+    id
+    title
+    original_title
+    original_title_romanised
+    description
+    director
+    producer
+    release_date
+    rt_score
+    people
+    species
+  }
+}
+mutation {
+  addFilm(
+    id:"8e594378-eb15-402a-925c-b94ff3972bdb",
+    title: "Prueba Film Studio Ghibli"
+    director: "Autor Prueba"
+    release_date:"2020"
+  ) {
+    id
+    title
+    director
+    release_date
+  }
+}
+
+{
+  totalFilm
+} 
+
+{
+  get2013Films{
+    id
+    title
+    original_title
+    original_title_romanised
+    description
+    director
+    producer
+    release_date
+    rt_score
+    people
+    species
+  }
+}
+{
+  getBestRateFilm{
+    id
+    title
+    original_title
+    original_title_romanised
+    description
+    director
+    producer
+    release_date
+    rt_score
+    people
+    species
+  }
+}
