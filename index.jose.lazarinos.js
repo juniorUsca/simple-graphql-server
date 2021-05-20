@@ -2,44 +2,42 @@ const { ApolloServer, gql } = require('apollo-server')
 const { v4: uuid } = require('uuid')
 const axios = require('axios').default;
 
-let libro=[]
+let Bible=[]
 
 const typeDefs = gql` 
   enum yes_no {
     yes
     no
   } 
-  type Libro {
+  type Bible {
     id: String!    
     name: String!
-    type: String!
-    gender: String!    
+    type: String!   
     origin: [String!]!    
     image: String! 
     pagina: [String!]!    
   }
   type Mutation {
-    "Agrega un nuevo libro"
+    "Agrega una nueva biblia"
     addLibro(
       id: Int!    
       name: String!
       type: String!
-      gender: String!   
-    ): Libro    
+    ): Bible    
   }
   type Query {
-   "Agrega un nuevo libro"
-    allLibro(author: String, Editorial: String): [Libro!]!
-    findLibro(id: String): Libro!
-    libroCount: Int!
+   "Agrega una nueva Biblia"
+    allBible(author: String, Editorial: String): [Bible!]!
+    findBible(id: String): Bible!
+    BibleCount: Int!
   }
 `
 
-let url="https://bhagavadgita.io/api/"
+let url="https://www.abiblidigital/verses/nvi/sl/30"
 
 const resolvers = {
   Query: {
-    allLibro: (root, args) => {
+    allBible: (root, args) => {
 
       let retorno=axios(url)
           .then((result) => {
@@ -54,7 +52,7 @@ const resolvers = {
       return retorno
 
     },
-    findLibro: (root, args) => {
+    findBible: (root, args) => {
 
       let retorno=axios.get(url+"/"+args.id)
           .then((result) => {
@@ -69,7 +67,7 @@ const resolvers = {
       return retorno
 
     },
-    LibroCount: () => {
+    BibleCount: () => {
         let retorno=axios(url)
             .then((result) => {
 
@@ -84,11 +82,11 @@ const resolvers = {
     },
   },
   Mutation: {
-    addLibro: (root, args) => {
+    addBible: (root, args) => {
 
-      const librp = { ...args, id: uuid() }
-      libros = libros.concat(Libro)
-      return libro
+      const Bible = { ...args, id: uuid() }
+      bibles = bibles.concat(Bible)
+      return bible
     },
   },
 }
