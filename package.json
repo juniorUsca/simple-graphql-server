@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start.ruben.chani.laura": "node index.ruben.chani.laura.js",
     "start.victor.huaycho" : "node index.victor.huaycho.js",
     "start.sixto.aisa": "node index.sixto.aisa.js",
     "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
