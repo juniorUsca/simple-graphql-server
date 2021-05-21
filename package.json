@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start.wilson.turpo.quispe": "node index.wilson.turpo.quispe.js",
+    "dev.wilson.turpo.quispe": "nodemon index.wilson.turpo.quispe.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
   "dependencies": {
     "apollo-server": "2.24.0",
     "axios": "0.21.1",
+    "graphql": "^15.5.0",
     "uuid": "8.3.2"
   },
   "devDependencies": {
