@@ -19,6 +19,7 @@
     "start.edix.carlos": "node index.Edix.Carlos.js",
     "start.jose.aimituma": "node index.Jose.Aimituma.js",
     "start.jose.lazarinos": "node index.jose.lazarinos.js",
+    "start.Michael.Cahuana": "node index.Michael.Cahuana.Ccopa.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
