@@ -4,7 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start.jilmer.mayta": "nodemon index.jilmer.mayta.condori.js",
+    "start.jilmer.mayta": "node index.jilmer.mayta.condori.js",
+    "start.ruben.chani.laura": "node index.ruben.chani.laura.js",
+    "start.victor.huaycho" : "node index.victor.huaycho.js",
+    "start.sixto.aisa": "node index.sixto.aisa.js",
+    "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
+    "start.javier.flores": "node index.javier.flores.cardenas.js",
+    "start.maria.aguilar": "node index.maria.aguilar.js",
+    "start.David.Alejo": "node index.David.Alejo.Apaza.js",
+    "start.mariam.apaza.santillana": "node index.mariam.apaza.santillana.js",
+    "start.andre": "node index.andre.delgado.js",
+    "start.jeydi.huaranca": "node index.Jeydi.Huarancca.Pacheco.js",
+    "start.diego.pamo": "node index.diego.pamo.js",
+    "start.edix.carlos": "node index.Edix.Carlos.js",
+    "start.jose.aimituma": "node index.Jose.Aimituma.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,13 +26,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "2.24.0",
+    "apollo-server": "2.24.1",
     "axios": "0.21.1",
     "graphql": "15.5.0",
     "node-fetch": "2.6.1",
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "apollo": "2.33.2",
     "nodemon": "2.0.7"
   }
 }
