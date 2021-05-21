@@ -7,7 +7,9 @@
     "start.brayan.champi": "node index.brayan.champi.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start.wilson.turpo.quispe": "node index.wilson.turpo.quispe.js",
+    "dev.wilson.turpo.quispe": "nodemon index.wilson.turpo.quispe.js"
   },
   "keywords": [],
   "author": "",
