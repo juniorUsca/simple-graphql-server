@@ -113,7 +113,7 @@ const resolvers = {
       }).catch((error) => {
            return []
       });
-      const total = episodesQuery.filter((episode) => episode.episode.findIndex(ep => ep == (apiURL + 'character/' + args.idEpisode)) !== -1).count
+      const total = episodesQuery.filter((episode) => episode.characters.findIndex(ep => ep == (apiURL + 'character/' + args.idCharacter)) !== -1).count
       return total
     },
   },
