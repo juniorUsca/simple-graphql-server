@@ -2,10 +2,11 @@
   "name": "simple-apollo-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.daniel.bedregal.perez.js",
   "scripts": {
+    "start.daniel.bedregal.perez": "node index.daniel.bedregal.perez.js",
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "nodemon index.daniel.bedregal.perez.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "dependencies": {
     "apollo-server": "2.24.0",
     "axios": "0.21.1",
+    "graphql": "^15.5.0",
     "uuid": "8.3.2"
   },
   "devDependencies": {
