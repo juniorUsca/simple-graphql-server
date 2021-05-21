@@ -22,6 +22,7 @@
     "start.jose.lazarinos": "node index.jose.lazarinos.js",
     "start.Michael.Cahuana": "node index.Michael.Cahuana.Ccopa.js",
     "start.luis.huamani":"node index.luis.huamani.ccapatinta.js",
+    "start.juan.obando": "node index.Juan.Vicente.Obando.Aquice.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
