@@ -73,16 +73,19 @@ const resolvers = {
   }
 }
 
+//Método que obtiene todos los Characters
 const getAllCharacters = async ()=>{
     const { data } = await axios(url)
     return data.results
 }
 
+//Método que obtiene un Character por su ID
 const getOneCharacter = async (id)=>{
   const  {data}  = await axios(`${url}/${id}`)
   return data
 }
 
+//Método que obtiene un Character por su estado a partir del enum
 const getCharacterByStatus = async (status) =>{
   const  {data}  = await axios(`${url}/?status=${status}`)
   return data.results
