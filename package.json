@@ -32,6 +32,7 @@
     "start.brayan.champi": "node index.brayan.champi.js",
     "start.alejandra.adrian": "node index.alejandra.adrian.js",
     "start.wilson.turpo.quispe": "node index.wilson.turpo.quispe.js",
+    "start.juan.obando": "node Index.Juan.Obando.Aquice.js",
     "dev.wilson.turpo.quispe": "nodemon index.wilson.turpo.quispe.js",
     "dev.daniel.bedregal": "nodemon index.daniel.bedregal.perez.js",
     "dev.jose.cancino": "nodemon index.jose.cancino.js"
