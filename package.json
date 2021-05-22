@@ -6,7 +6,7 @@
   "scripts": {
     "start.jilmer.mayta": "node index.jilmer.mayta.condori.js",
     "start.ruben.chani.laura": "node index.ruben.chani.laura.js",
-    "start.victor.huaycho" : "node index.victor.huaycho.js",
+    "start.victor.huaycho": "node index.victor.huaycho.js",
     "start.sixto.aisa": "node index.sixto.aisa.js",
     "start.joseph.carita.mamani": "node index.joseph.carita.mamani.jc.js",
     "start.javier.flores": "node index.javier.flores.cardenas.js",
@@ -21,7 +21,8 @@
     "start.jose.aimituma": "node index.Jose.Aimituma.js",
     "start.jose.lazarinos": "node index.jose.lazarinos.js",
     "start.Michael.Cahuana": "node index.Michael.Cahuana.Ccopa.js",
-    "start.luis.huamani":"node index.luis.huamani.ccapatinta.js",
+    "start.luis.huamani": "node index.luis.huamani.ccapatinta.js",
+    "start.Nikols.Venegas": "node index.Nikols.Venegas.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
