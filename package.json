@@ -25,7 +25,7 @@
     "start.jose.lazarinos": "node index.jose.lazarinos.js",
     "start.Michael.Cahuana": "node index.Michael.Cahuana.Ccopa.js",
     "start.Nikols.Venegas": "node index.Nikols.Venegas.js",
-    "start.luis.huamani":"node index.luis.huamani.ccapatinta.js",
+    "start.luis.huamani": "node index.luis.huamani.ccapatinta.js",
     "start.fabrizio.atiquipa.medoza": "node index.fabrizio.atiquipa.mendoza.js",
     "start.daniel.bedregal": "node index.daniel.bedregal.perez.js",
     "start.ayrton.taco.torres":"node index.Ayrton.Taco.Torres.js",
@@ -34,6 +34,7 @@
     "start.alejandra.adrian": "node index.alejandra.adrian.js",
     "start.wilson.turpo.quispe": "node index.wilson.turpo.quispe.js",
     "start.juan.obando": "node Index.Juan.Obando.Aquice.js",
+    "start.eduardo.rodriguez.herrera": "node index.eduardo.rodriguez.herrera.js"
     "dev.wilson.turpo.quispe": "nodemon index.wilson.turpo.quispe.js",
     "dev.daniel.bedregal": "nodemon index.daniel.bedregal.perez.js",
     "dev.jose.cancino": "nodemon index.jose.cancino.js"
