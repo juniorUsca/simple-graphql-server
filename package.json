@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start.fabrizio.atiquipa.medoza": "node index.fabrizio.atiquipa.mendoza.js",
     "start.ayrton.taco.torres":"node index.Ayrton.Taco.Torres.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
