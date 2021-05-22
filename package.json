@@ -1,9 +1,12 @@
 {
   "name": "simple-apollo-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start.index.Jhon.Marca.Pere": "node index.Jhon.Marca.Pere.js",
     "start.jilmer.mayta": "node index.jilmer.mayta.condori.js",
     "start.ruben.chani.laura": "node index.ruben.chani.laura.js",
@@ -22,18 +25,28 @@
     "start.jose.aimituma": "node index.Jose.Aimituma.js",
     "start.jose.lazarinos": "node index.jose.lazarinos.js",
     "start.Michael.Cahuana": "node index.Michael.Cahuana.Ccopa.js",
+    "start.Nikols.Venegas": "node index.Nikols.Venegas.js",
     "start.luis.huamani": "node index.luis.huamani.ccapatinta.js",
-    "start": "node index.Jhon.Marca.Pere.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start.fabrizio.atiquipa.medoza": "node index.fabrizio.atiquipa.mendoza.js",
+    "start.daniel.bedregal": "node index.daniel.bedregal.perez.js",
+    "start.ayrton.taco.torres":"node index.Ayrton.Taco.Torres.js",
+    "start.jose.cancino": "node index.jose.cancino.js",
+    "start.brayan.champi": "node index.brayan.champi.js",
+    "start.alejandra.adrian": "node index.alejandra.adrian.js",
+    "start.wilson.turpo.quispe": "node index.wilson.turpo.quispe.js",
+    "start.juan.obando": "node Index.Juan.Obando.Aquice.js",
+    "start.eduardo.rodriguez.herrera": "node index.eduardo.rodriguez.herrera.js"
+    "dev.wilson.turpo.quispe": "nodemon index.wilson.turpo.quispe.js",
+    "dev.daniel.bedregal": "nodemon index.daniel.bedregal.perez.js",
+    "dev.jose.cancino": "nodemon index.jose.cancino.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.24.1",
+    "apollo-server": "2.24.1",
     "axios": "0.21.1",
-    "graphql": "^15.5.0",
+    "graphql": "15.5.0",
     "node-fetch": "2.6.1",
     "uuid": "8.3.2"
   },
