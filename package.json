@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start.fabrizio.atiquipa.medoza": "node index.fabrizio.atiquipa.mendoza.js",
-    "start.ayrton.taco.torres":"node index.Ayrton.Taco.Torres.js",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start.fabrizio.atiquipa.medoza": "node index.fabrizio.atiquipa.mendoza.js",
+    "start.daniel.bedregal": "node index.daniel.bedregal.perez.js",
+    "start.ayrton.taco.torres":"node index.Ayrton.Taco.Torres.js",
     "start.jose.cancino": "node index.jose.cancino.js",
     "start.brayan.champi": "node index.brayan.champi.js",
     "start.alejandra.adrian": "node index.alejandra.adrian.js",
@@ -23,7 +24,7 @@
   "dependencies": {
     "apollo-server": "2.24.0",
     "axios": "0.21.1",
-    "graphql": "^15.5.0",
+    "graphql": "15.5.0",
     "uuid": "8.3.2"
   },
   "devDependencies": {
