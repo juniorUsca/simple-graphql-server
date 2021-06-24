@@ -7,6 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start.index.Franco":"node index.franco.starke.js",
     "start.index.Jhon.Marca.Pere": "node index.Jhon.Marca.Pere.js",
     "start.jilmer.mayta": "node index.jilmer.mayta.condori.js",
     "start.ruben.chani.laura": "node index.ruben.chani.laura.js",
